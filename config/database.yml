@@ -1,0 +1,27 @@
+# config/database.yml
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: localhost
+  port: 5432  # Port par défaut
+
+development:
+  <<: *default
+  database: app_name_rr2d_development
+  username: postgres
+  password: 'your_password'
+
+test:
+  <<: *default
+  database: app_name_rr2d_test
+  username: postgres
+  password: 'your_password'
+
+production:
+  <<: *default
+  database: ror_db
+  username: p_sql_user
+  password: <%= Rails.application.credentials.dig(:production, :database_password) %>
+  host: localhost
