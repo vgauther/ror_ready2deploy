@@ -7,11 +7,13 @@
 
 > Database : PostGreSQL
 
-> OS : Debian 11
+> OS : Debian 11 (15.8)
 
 > Git : GitHub 
 
 > Deploy with Capistrano
+
+> Dev made on macOS
 
 >[!NOTE]
 >In this guide we consider you are using a brand new VPS install with no other project (especialy Ruby/RoR project). Following this guide could (*will*) break your other apps.
