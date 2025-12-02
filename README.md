@@ -7,7 +7,7 @@
 
 > Database : PostGreSQL
 
-> OS : Debian 11 (15.8)
+> OS : Debian 11
 
 > Git : GitHub 
 
@@ -204,7 +204,7 @@ EDITOR="vim" bin/rails credentials:edit
 ```
 Copy your file to server.
 ```
-ssh deploy@87.106.105.31 "mkdir -p ~/apps/second_try_rr2d/shared/config/" && scp config/master.key deploy@87.106.105.31:~/apps/second_try_rr2d/shared/config/master.key
+ssh deploy@<your-ip> "mkdir -p ~/apps/<your-app-folder>/shared/config/" && scp config/master.key deploy@87.106.105.31:~/apps/<your-app-folder>/shared/config/master.key
 ```
 ## Config database.yml
 ```
