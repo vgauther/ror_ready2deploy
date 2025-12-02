@@ -209,7 +209,7 @@ EDITOR="vim" bin/rails credentials:edit
 ```
 Copy your file to server.
 ```
-ssh deploy@<your-ip> "mkdir -p ~/apps/<your-app-folder>/shared/config/" && scp config/master.key deploy@87.106.105.31:~/apps/<your-app-folder>/shared/config/master.key
+ssh deploy@<your-ip> "mkdir -p ~/apps/<your-app-folder>/shared/config/" && scp config/master.key deploy@<your-ip>:~/apps/<your-app-folder>/shared/config/master.key
 ```
 ## Config database.yml
 ```
