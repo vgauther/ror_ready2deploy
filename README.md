@@ -69,6 +69,11 @@ Launch the script
 bash <(wget -qO- https://cdn-nivo.com/wp-content/uploads/server_config.sh)
 ```
 
+Copy your SSH Key in your GitHub or GitLab settings to grant acces to the repo to your server
+```
+cat ~/.ssh/id_rsa.pub
+```
+
 ### Install and configure PostgreSQL
 Access PostGres shell.
 ```
